@@ -18,6 +18,6 @@ function divide(a,b) {
     return a / b;
 }
 
-function operate(string) {
+function operate(firstNum, operator, secondNum) {
 
 }
