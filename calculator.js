@@ -19,5 +19,13 @@ function divide(a,b) {
 }
 
 function operate(firstNum, operator, secondNum) {
-
+    if (operator === "+") {
+        add(firstNum, secondNum);
+    } else if (operator === "-") {
+        subtract(firstNum, secondNum);
+    } else if (operator === "x") {
+        multiply(firstNum, secondNum);
+    } else if (operator === "÷") {
+        divide(firstNum, secondNum);
+    }
 }
