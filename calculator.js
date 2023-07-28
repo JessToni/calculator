@@ -22,12 +22,12 @@ function operate(firstNum, operator, secondNum) {
     firstNum = parseFloat(firstNum);
     secondNum = parseFloat(secondNum);
     if (operator === "+") {
-        add(firstNum, secondNum);
+        return add(firstNum, secondNum);
     } else if (operator === "-") {
-        subtract(firstNum, secondNum);
+        return subtract(firstNum, secondNum);
     } else if (operator === "x") {
-        multiply(firstNum, secondNum);
+        return multiply(firstNum, secondNum);
     } else if (operator === "÷") {
-        divide(firstNum, secondNum);
+        return divide(firstNum, secondNum);
     }
 }
