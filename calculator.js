@@ -55,6 +55,10 @@ function storeValue(displayValue) {
     firstNum = displayValue;
 }
 
+function storeOperator(symbol) {
+    operator = symbol;
+}
+
 document.querySelector('.btn-container').addEventListener('click', function(event) {
     const target = event.target;
     if (target.tagName === 'BUTTON') {
@@ -63,6 +67,7 @@ document.querySelector('.btn-container').addEventListener('click', function(even
             clearDisplay();
         } else if (buttonValue === '+'|| buttonValue === '-' || buttonValue === 'x' || buttonValue === '÷') {
             storeValue(displayValue);
+            storeOperator(buttonValue);
             appendToDisplay(buttonValue)
         } else {
             appendToDisplay(buttonValue);
