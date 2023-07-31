@@ -58,6 +58,8 @@ document.querySelector('.btn-container').addEventListener('click', function(even
         const buttonValue = target.innerText;
         if(buttonValue === 'C') {
             clearDisplay();
+        } else {
+            appendToDisplay(buttonValue);
         }
     }
 });
