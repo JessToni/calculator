@@ -32,3 +32,7 @@ function operate(firstNum, operator, secondNum) {
         return divide(firstNum, secondNum);
     }
 }
+
+function updateDisplay() {
+    document.querySelector(".calc-display").innerText = displayValue;
+}
