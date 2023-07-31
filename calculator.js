@@ -1,7 +1,7 @@
 let firstNum;
 let secondNum;
 let operator;
-let displayValue = 0;
+let displayValue = '0';
 
 function add(a,b) {
     return a + b;
@@ -35,6 +35,16 @@ function operate(firstNum, operator, secondNum) {
 
 function updateDisplay() {
     document.querySelector(".calc-display").innerText = displayValue;
+}
+
+function appendToDisplay(value) {
+    if (displayValue === '0') {
+        displayValue = value;
+    } else {
+        displayValue += value;
+    }
+
+    updateDisplay();
 }
 
 updateDisplay();
