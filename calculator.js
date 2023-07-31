@@ -47,4 +47,9 @@ function appendToDisplay(value) {
     updateDisplay();
 }
 
+function clearDisplay() {
+    displayValue = '0';
+    updateDisplay();
+}
+
 updateDisplay();
