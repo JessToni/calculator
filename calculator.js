@@ -61,6 +61,8 @@ document.querySelector('.btn-container').addEventListener('click', function(even
         } else {
             appendToDisplay(buttonValue);
         }
+
+        updateDisplay();
     }
 });
 
