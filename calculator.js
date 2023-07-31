@@ -49,7 +49,6 @@ function appendToDisplay(value) {
 
 function clearDisplay() {
     displayValue = '0';
-    updateDisplay();
 }
 
 document.querySelector('.btn-container').addEventListener('click', function(event) {
@@ -61,7 +60,6 @@ document.querySelector('.btn-container').addEventListener('click', function(even
         } else {
             appendToDisplay(buttonValue);
         }
-
         updateDisplay();
     }
 });
