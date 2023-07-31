@@ -36,3 +36,5 @@ function operate(firstNum, operator, secondNum) {
 function updateDisplay() {
     document.querySelector(".calc-display").innerText = displayValue;
 }
+
+updateDisplay();
