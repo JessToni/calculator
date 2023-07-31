@@ -51,12 +51,19 @@ function clearDisplay() {
     displayValue = '0';
 }
 
+function storeValue(displayValue) {
+    firstNum = displayValue;
+}
+
 document.querySelector('.btn-container').addEventListener('click', function(event) {
     const target = event.target;
     if (target.tagName === 'BUTTON') {
         const buttonValue = target.innerText;
         if(buttonValue === 'C') {
             clearDisplay();
+        } else if (buttonValue === '+'|| buttonValue === '-' || buttonValue === 'x' || buttonValue === '÷') {
+            storeValue(displayValue);
+            appendToDisplay(buttonValue)
         } else {
             appendToDisplay(buttonValue);
         }
