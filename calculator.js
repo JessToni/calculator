@@ -56,7 +56,9 @@ document.querySelector('.btn-container').addEventListener('click', function(even
     const target = event.target;
     if (target.tagName === 'BUTTON') {
         const buttonValue = target.innerText;
-        console.log(buttonValue);
+        if(buttonValue === 'C') {
+            clearDisplay();
+        }
     }
 });
 
