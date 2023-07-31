@@ -52,4 +52,12 @@ function clearDisplay() {
     updateDisplay();
 }
 
+document.querySelector('.btn-container').addEventListener('click', function(event) {
+    const target = event.target;
+    if (target.tagName === 'BUTTON') {
+        const buttonValue = target.innerText;
+        console.log(buttonValue);
+    }
+});
+
 updateDisplay();
