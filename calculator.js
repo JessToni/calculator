@@ -74,7 +74,6 @@ function equals() {
     storeSecondValue(displayValue,operator);
     let result = operate(firstNum, operator, secondNum);
     clearDisplay();
-    firstNum = result;
     appendToDisplay(result);
 }
 
