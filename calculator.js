@@ -1,6 +1,6 @@
 let firstNum = '0';
 let secondNum = '0';
-let operator = '+';
+let operator = '';
 let displayValue = '0';
 
 function add(a,b) {
@@ -49,9 +49,12 @@ function appendToDisplay(value) {
 
 function clearDisplay() {
     displayValue = '0';
-    secondNum = '0';
-    operator = "+";
     updateDisplay();
+}
+
+function clearVariables() {
+    secondNum = '0';
+    operator = '';
 }
 
 function storeValue(displayValue) {
@@ -76,6 +79,7 @@ function equals() {
 }
 
 function operatorOnclick(buttonValue) {
+
     if (displayValue.split(operator).length > 1) {
         equals();
         storeOperator(buttonValue);
