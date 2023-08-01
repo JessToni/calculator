@@ -65,7 +65,7 @@ function storeSecondValue(displayValue) {
 }
 
 //Event listener for all of the buttons in the calculator
-document.querySelector('.btn-container').addEventListener('click', function(event) {
+/*document.querySelector('.btn-container').addEventListener('click', function(event) {
     const target = event.target;
     if (target.tagName === 'BUTTON') {
         const buttonValue = target.innerText;
@@ -81,6 +81,9 @@ document.querySelector('.btn-container').addEventListener('click', function(even
         updateDisplay();
     }
 });
+*/
+
+
 
 //Initializes the display for user inputs
 updateDisplay();
