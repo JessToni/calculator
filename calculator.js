@@ -50,6 +50,7 @@ function appendToDisplay(value) {
 
 function clearDisplay() {
     displayValue = '0';
+    updateDisplay();
 }
 
 function storeValue(displayValue) {
@@ -61,7 +62,6 @@ function storeOperator(symbol) {
 }
 
 function storeSecondValue(displayValue) {
-    second
 }
 
 //Event listener for all of the buttons in the calculator
@@ -83,7 +83,7 @@ function storeSecondValue(displayValue) {
 });
 */
 
-
+document.getElementById('clear').addEventListener('click', clearDisplay);
 
 //Initializes the display for user inputs
 updateDisplay();
