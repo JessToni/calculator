@@ -74,8 +74,7 @@ function equals() {
 }
 
 function operatorOnclick(buttonValue) {
-    let numberOfItems = displayValue.split(operator).length;
-    if (numberOfItems > 1) {
+    if (displayValue.split(operator).length > 1) {
         equals();
         storeOperator(buttonValue);
         appendToDisplay(operator);
