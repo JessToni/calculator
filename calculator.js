@@ -1,6 +1,6 @@
 let firstNum = '0';
 let secondNum = '0';
-let operator = '';
+let operator = '+';
 let displayValue = '0';
 
 function add(a,b) {
@@ -52,11 +52,6 @@ function clearDisplay() {
     updateDisplay();
 }
 
-function clearVariables() {
-    secondNum = '0';
-    operator = '';
-}
-
 function storeValue(displayValue) {
     firstNum = displayValue;
 }
@@ -74,11 +69,13 @@ function equals() {
     storeSecondValue(displayValue,operator);
     let result = operate(firstNum, operator, secondNum);
     clearDisplay();
+    firstNum = result;
     appendToDisplay(result);
 }
 
 function operatorOnclick(buttonValue) {
-    if (displayValue.split(operator).length > 1) {
+    let numberOfItems = displayValue.split(operator).length;
+    if (numberOfItems > 1) {
         equals();
         storeOperator(buttonValue);
         appendToDisplay(operator);
@@ -96,7 +93,6 @@ document.querySelector('.btn-container').addEventListener('click', function(even
         const buttonValue = target.innerText;
         if(buttonValue === 'C') {
             clearDisplay();
-            clearVariables();
         } else if (buttonValue === '+'|| buttonValue === '-' || buttonValue === 'x' || buttonValue === '÷') {
             operatorOnclick(buttonValue);
         } else if (buttonValue === '=') {
