@@ -73,9 +73,16 @@ function equals() {
 }
 
 function operatorOnclick(buttonValue) {
-    storeValue(displayValue);
-    storeOperator(buttonValue);
-    appendToDisplay(buttonValue);
+    let numberOfItems = displayValue.split(operator).length;
+    if (numberOfItems > 1) {
+        equals();
+        storeOperator(buttonValue);
+        appendToDisplay(operator);
+    } else {
+        storeValue(displayValue);
+        storeOperator(buttonValue);
+        appendToDisplay(buttonValue);
+    }
 }
 
 //Event listener for all of the buttons in the calculator
