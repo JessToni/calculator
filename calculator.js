@@ -79,7 +79,6 @@ function equals() {
 }
 
 function operatorOnclick(buttonValue) {
-
     if (displayValue.split(operator).length > 1) {
         equals();
         storeOperator(buttonValue);
