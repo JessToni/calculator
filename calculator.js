@@ -83,6 +83,8 @@ function storeSecondValue(displayValue) {
 */
 
 document.getElementById('clear').addEventListener('click', clearDisplay);
+document.getElementById('one').addEventListener('click', () => appendToDisplay('1'));
+document.getElementById('two').addEventListener('click', () => appendToDisplay('2'));
 
 //Initializes the display for user inputs
 updateDisplay();
