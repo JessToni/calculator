@@ -2,6 +2,7 @@ let firstNum;
 let secondNum;
 let operator;
 let displayValue = '0';
+let 
 
 function add(a,b) {
     return a + b;
@@ -59,6 +60,11 @@ function storeOperator(symbol) {
     operator = symbol;
 }
 
+function storeSecondValue(displayValue) {
+    second
+}
+
+//Event listener for all of the buttons in the calculator
 document.querySelector('.btn-container').addEventListener('click', function(event) {
     const target = event.target;
     if (target.tagName === 'BUTTON') {
@@ -76,4 +82,5 @@ document.querySelector('.btn-container').addEventListener('click', function(even
     }
 });
 
+//Initializes the display for user inputs
 updateDisplay();
