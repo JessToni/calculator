@@ -64,7 +64,7 @@ function storeSecondValue(displayValue) {
 }
 
 //Event listener for all of the buttons in the calculator
-/*document.querySelector('.btn-container').addEventListener('click', function(event) {
+document.querySelector('.btn-container').addEventListener('click', function(event) {
     const target = event.target;
     if (target.tagName === 'BUTTON') {
         const buttonValue = target.innerText;
@@ -80,9 +80,8 @@ function storeSecondValue(displayValue) {
         updateDisplay();
     }
 });
-*/
 
-document.getElementById('clear').addEventListener('click', clearDisplay);
+/*document.getElementById('clear').addEventListener('click', clearDisplay);
 document.getElementById('zero').addEventListener('click', () => appendToDisplay('0'));
 document.getElementById('one').addEventListener('click', () => appendToDisplay('1'));
 document.getElementById('two').addEventListener('click', () => appendToDisplay('2'));
@@ -92,7 +91,7 @@ document.getElementById('five').addEventListener('click', () => appendToDisplay(
 document.getElementById('six').addEventListener('click', () => appendToDisplay('6'));
 document.getElementById('seven').addEventListener('click', () => appendToDisplay('7'));
 document.getElementById('eight').addEventListener('click', () => appendToDisplay('8'));
-document.getElementById('nine').addEventListener('click', () => appendToDisplay('9'));
+document.getElementById('nine').addEventListener('click', () => appendToDisplay('9'));*/
 
 //Initializes the display for user inputs
 updateDisplay();
