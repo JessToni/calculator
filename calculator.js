@@ -62,7 +62,7 @@ function storeOperator(symbol) {
 
 function storeSecondValue(displayValue,operator) {
     let splitString = displayValue.split(operator);
-    secondNum = splitString;
+    secondNum = splitString[1];
 }
 
 //Event listener for all of the buttons in the calculator
@@ -78,6 +78,9 @@ document.querySelector('.btn-container').addEventListener('click', function(even
             appendToDisplay(buttonValue)
         } else if (buttonValue === '=') {
             storeSecondValue(displayValue,operator);
+            let result = operate(firstNum, operator, secondNum);
+            clearDisplay();
+            appendToDisplay(result);
         }else {
             appendToDisplay(buttonValue);
         }
