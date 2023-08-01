@@ -1,6 +1,6 @@
-let firstNum;
-let secondNum;
-let operator;
+let firstNum = '0';
+let secondNum = '0';
+let operator = '+';
 let displayValue = '0';
 
 function add(a,b) {
