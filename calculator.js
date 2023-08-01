@@ -61,6 +61,7 @@ function storeOperator(symbol) {
 }
 
 function storeSecondValue(displayValue) {
+    secondNum = displayValue;
 }
 
 //Event listener for all of the buttons in the calculator
@@ -74,7 +75,9 @@ document.querySelector('.btn-container').addEventListener('click', function(even
             storeValue(displayValue);
             storeOperator(buttonValue);
             appendToDisplay(buttonValue)
-        } else {
+        } else if (buttonValue === '=') {
+            storeSecondValue(displayValue)
+        }else {
             appendToDisplay(buttonValue);
         }
         updateDisplay();
