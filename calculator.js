@@ -72,6 +72,12 @@ function equals() {
     appendToDisplay(result);
 }
 
+function operatorOnclick(buttonValue) {
+    storeValue(displayValue);
+    storeOperator(buttonValue);
+    appendToDisplay(buttonValue);
+}
+
 //Event listener for all of the buttons in the calculator
 document.querySelector('.btn-container').addEventListener('click', function(event) {
     const target = event.target;
@@ -80,9 +86,7 @@ document.querySelector('.btn-container').addEventListener('click', function(even
         if(buttonValue === 'C') {
             clearDisplay();
         } else if (buttonValue === '+'|| buttonValue === '-' || buttonValue === 'x' || buttonValue === '÷') {
-            storeValue(displayValue);
-            storeOperator(buttonValue);
-            appendToDisplay(buttonValue)
+            operatorOnclick(buttonValue);
         } else if (buttonValue === '=') {
             equals();
         }else {
