@@ -2,7 +2,6 @@ let firstNum;
 let secondNum;
 let operator;
 let displayValue = '0';
-let 
 
 function add(a,b) {
     return a + b;
