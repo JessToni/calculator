@@ -49,6 +49,8 @@ function appendToDisplay(value) {
 
 function clearDisplay() {
     displayValue = '0';
+    secondNum = '0';
+    operator = "+";
     updateDisplay();
 }
 
