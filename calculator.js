@@ -98,6 +98,7 @@ document.querySelector('.btn-container').addEventListener('click', function(even
         const buttonValue = target.innerText;
         if(buttonValue === 'C') {
             clearDisplay();
+            clearVariables();
         } else if (buttonValue === '+'|| buttonValue === '-' || buttonValue === 'x' || buttonValue === '÷') {
             operatorOnclick(buttonValue);
         } else if (buttonValue === '=') {
