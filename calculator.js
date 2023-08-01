@@ -65,6 +65,13 @@ function storeSecondValue(displayValue,operator) {
     secondNum = splitString[1];
 }
 
+function equals() {
+    storeSecondValue(displayValue,operator);
+    let result = operate(firstNum, operator, secondNum);
+    clearDisplay();
+    appendToDisplay(result);
+}
+
 //Event listener for all of the buttons in the calculator
 document.querySelector('.btn-container').addEventListener('click', function(event) {
     const target = event.target;
@@ -77,10 +84,7 @@ document.querySelector('.btn-container').addEventListener('click', function(even
             storeOperator(buttonValue);
             appendToDisplay(buttonValue)
         } else if (buttonValue === '=') {
-            storeSecondValue(displayValue,operator);
-            let result = operate(firstNum, operator, secondNum);
-            clearDisplay();
-            appendToDisplay(result);
+            equals();
         }else {
             appendToDisplay(buttonValue);
         }
