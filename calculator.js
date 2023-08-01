@@ -64,6 +64,23 @@ function storeSecondValue(displayValue) {
     secondNum = displayValue;
 }
 
+document.querySelectorAll('.number').addEventListener('click', function(event) {
+    const target = event.target;
+    if (target.tagName === 'BUTTON') {
+        const buttonValue = target.innerText;
+        if(buttonValue === 'C') {
+            clearDisplay();
+        } else if (buttonValue === '+'|| buttonValue === '-' || buttonValue === 'x' || buttonValue === '÷') {
+            storeValue(displayValue);
+            storeOperator(buttonValue);
+            appendToDisplay(buttonValue)
+        } else {
+            appendToDisplay(buttonValue);
+        }
+        updateDisplay();
+    }
+});
+
 //Event listener for all of the buttons in the calculator
 /*document.querySelector('.btn-container').addEventListener('click', function(event) {
     const target = event.target;
