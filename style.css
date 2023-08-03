@@ -15,30 +15,47 @@ body {
 }
 
 .number {
-    border: 1px solid greenyellow; 
+    border: 1px solid #adff2f; 
     border-radius: 10px;
 }
 
 .number:hover {
-    background-color: palegreen;
+    background-color: #98fb98;
 }
 
 .operator {
-    border: 1px solid steelblue; 
+    border: 1px solid #4682b4; 
     border-radius: 10px;
+}
+
+.operator:hover {
+    background-color: #afeeee;
 }
 
 .decimal {
-    border: 1px solid gold; 
+    border: 1px solid #ffd700; 
     border-radius: 10px;
+}
+
+.decimal:hover {
+    background-color: #FDDC5C;
 }
 
 .equal {
-    border: 1px solid lightcoral; 
+    border: 1px solid #f08080; 
     border-radius: 10px;
 }
 
+.equal:hover {
+    background-color: #fea2a2;
+}
+
 #clear-button {
-    border: 1px solid palevioletred; 
+    border: 1px solid #d87093; 
     border-radius: 10px;
+}
+
+#clear-button:hover {
+    border: transparent;
+    background-color: #ec9cb7;
 }
