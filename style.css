@@ -14,27 +14,31 @@ body {
     font-size: 40px;
 }
 
-.number {
-    border: 1px solid greenyellow !important; 
-    border-radius: 10px !important;
+.number:hover {
+    background-color: palegreen !important;
+}
+
+.other-rows.number {
+    border: 1px solid greenyellow; 
+    border-radius: 10px;
 }
 
 .operator {
-    border: 1px solid steelblue !important; 
-    border-radius: 10px !important;
+    border: 1px solid steelblue; 
+    border-radius: 10px;
 }
 
 .decimal {
-    border: 1px solid gold !important; 
-    border-radius: 10px !important;
+    border: 1px solid gold; 
+    border-radius: 10px;
 }
 
 .equal {
-    border: 1px solid lightcoral !important; 
-    border-radius: 10px !important;
+    border: 1px solid lightcoral; 
+    border-radius: 10px;
 }
 
 #clear-button {
-    border: 1px solid palevioletred !important; 
-    border-radius: 10px !important;
+    border: 1px solid palevioletred; 
+    border-radius: 10px;
 }
