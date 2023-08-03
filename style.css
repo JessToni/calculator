@@ -14,15 +14,13 @@ body {
     font-size: 40px;
 }
 
-.number:hover {
-    background-color: palegreen !important;
-}
-
-
-
 .number {
     border: 1px solid greenyellow; 
     border-radius: 10px;
+}
+
+.number:hover {
+    background-color: palegreen;
 }
 
 .operator {
