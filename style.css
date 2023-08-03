@@ -13,3 +13,28 @@ body {
     margin: 15px;
     font-size: 40px;
 }
+
+.number {
+    border: 1px solid greenyellow !important; 
+    border-radius: 10px !important;
+}
+
+.operator {
+    border: 1px solid steelblue !important; 
+    border-radius: 10px !important;
+}
+
+.decimal {
+    border: 1px solid gold !important; 
+    border-radius: 10px !important;
+}
+
+.equal {
+    border: 1px solid lightcoral !important; 
+    border-radius: 10px !important;
+}
+
+.clear-button {
+    border: 1px solid palevioletred !important; 
+    border-radius: 10px !important;
+}
