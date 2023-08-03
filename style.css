@@ -18,7 +18,9 @@ body {
     background-color: palegreen !important;
 }
 
-.other-rows.number {
+
+
+.number {
     border: 1px solid greenyellow; 
     border-radius: 10px;
 }
