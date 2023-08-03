@@ -34,7 +34,7 @@ body {
     border-radius: 10px !important;
 }
 
-.clear-button {
+#clear-button {
     border: 1px solid palevioletred !important; 
     border-radius: 10px !important;
 }
