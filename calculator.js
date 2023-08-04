@@ -65,6 +65,7 @@ function calculate() {
         divide(previousValue, currentValue);
     }
 
+    previousValue = roundNumber(previousValue);
     previousValue = previousValue.toString();
     currentValue = previousValue.toString();
 }
@@ -83,4 +84,8 @@ function multiply(a,b) {
 
 function divide(a,b) {
     previousValue /= currentValue;
+}
+
+function roundNumber(num) {
+    return Math.round(num * 1000)/1000
 }
