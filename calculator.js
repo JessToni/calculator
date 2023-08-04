@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     decimal.addEventListener("click", function() {
-        
+        addDecimal();
     })
 })
 
@@ -98,4 +98,8 @@ function divide(a,b) {
 
 function roundNumber(num) {
     return Math.round(num * 1000)/1000
+}
+
+function addDecimal() {
+
 }
