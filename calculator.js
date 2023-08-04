@@ -17,11 +17,19 @@ document.addEventListener("DOMContentLoaded", function () {
     numbers.forEach((number) => number.addEventListener("click", function(e) {
         handleNumber(e.target.textContent);
         currentScreen.textContent = currentValue;
-    })) 
+    }))
+
+    operators.forEach((operator) => operator.addEventListener('click', function(e) {
+        handleOperator(e.target.textContent);
+    }))
 })
 
 function handleNumber(num) {
     if (currentValue.length <= 5) {
         currentValue += num;
     }
+}
+
+function handleOperator(opr) {
+    console.log(opr);
 }
