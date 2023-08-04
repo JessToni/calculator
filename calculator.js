@@ -35,6 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     equal.addEventListener("click", function() {
         if (currentValue != '' && previousValue != '') {
+            if (operator == '/' && currentValue == 0) {
+                return alert("It's infinity, who cares? Move along.");
+            }
             calculate();
             previousScreen.textContent = '';
             if (previousValue.length <= 9) {
