@@ -73,3 +73,11 @@ body {
     height: 75px;
     margin: 15px;
 }
+
+.previous {
+    font-size: 20px;
+}
+
+.current {
+    font-size: 35px;
+}
