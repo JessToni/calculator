@@ -55,12 +55,12 @@ function calculate() {
     currentValue  = parseFloat(currentValue);
     if (operator === '+') {
         add(previousValue, currentValue);
-    } else if (operator === '-' ) {
+    } else if (operator === '-') {
         subtract(previousValue, currentValue);
-    } else if () {
-
-    } else if () {
-
+    } else if (operator === 'x') {
+        multiply(previousValue, currentValue);
+    } else if (operator === '/') {
+        divide(previousValue, currentValue);
     }
 
     console.log(previousValue)
@@ -68,4 +68,16 @@ function calculate() {
 
 function add(a,b) {
     previousValue += currentValue;
+}
+
+function subtract(a,b) {
+    previousValue -= currentValue;
+}
+
+function multiply(a,b) {
+    previousValue *= currentValue;
+}
+
+function divide(a,b) {
+    previousValue /= currentValue;
 }
