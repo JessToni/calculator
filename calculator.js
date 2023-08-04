@@ -16,9 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     numbers.forEach((number) => number.addEventListener("click", function(e) {
         handleNumber(e.target.textContent);
+        currentScreen.textContent = currentValue;
     })) 
 })
 
 function handleNumber(num) {
-    console.log(num);
+    currentValue += num;
 }
