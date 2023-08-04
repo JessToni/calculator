@@ -19,9 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
         currentScreen.textContent = currentValue;
     }))
 
-    operators.forEach((operator) => operator.addEventListener('click', function(e) {
+    operators.forEach((op) => op.addEventListener("click", function(e) {
         handleOperator(e.target.textContent);
+        previousScreen.textContent = previousValue + " " + operator;
+        currentScreen.textContent = currentValue;
     }))
+    
 })
 
 function handleNumber(num) {
@@ -31,5 +34,7 @@ function handleNumber(num) {
 }
 
 function handleOperator(opr) {
-    console.log(opr);
+    operator = opr;
+    previousValue = currentValue;
+    currentValue = '';
 }
