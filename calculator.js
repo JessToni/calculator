@@ -21,5 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 function handleNumber(num) {
-    currentValue += num;
+    if (currentValue.length <= 5) {
+        currentValue += num;
+    }
 }
