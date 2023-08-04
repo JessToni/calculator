@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     decimal.addEventListener("click", function() {
         addDecimal();
+        currentScreen.textContent = currentValue;
     })
 })
 
@@ -101,5 +102,7 @@ function roundNumber(num) {
 }
 
 function addDecimal() {
-
+    if (!currentValue.includes(".")) {
+        currentValue += '.';
+    }
 }
