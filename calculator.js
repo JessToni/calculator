@@ -51,5 +51,21 @@ function handleOperator(opr) {
 }
 
 function calculate() {
+    previousValue = parseFloat(previousValue);
+    currentValue  = parseFloat(currentValue);
+    if (operator === '+') {
+        add(previousValue, currentValue);
+    } else if (operator === '-' ) {
+        subtract(previousValue, currentValue);
+    } else if () {
 
+    } else if () {
+
+    }
+
+    console.log(previousValue)
+}
+
+function add(a,b) {
+    previousValue += currentValue;
 }
