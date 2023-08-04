@@ -35,6 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     equal.addEventListener("click", function() {
         calculate();
+        previousScreen.textContent = '';
+        currentScreen.textContent = previousValue;
     })
 })
 
@@ -63,7 +65,8 @@ function calculate() {
         divide(previousValue, currentValue);
     }
 
-    console.log(previousValue)
+    previousValue = previousValue.toString();
+    currentValue = previousValue.toString();
 }
 
 function add(a,b) {
