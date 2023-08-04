@@ -60,8 +60,16 @@ body {
     background-color: #ec9cb7;
 }
 
+.first-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
 .screen {
     width: 300px;
     border: 1px solid chocolate;
     height: 75px;
+    margin: 15px;
 }
